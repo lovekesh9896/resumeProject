@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	
 	<title>New Resume Project</title>
 	<link rel="stylesheet" type="text/css" href="/css/new_resume.css">
+	<meta name="description" content="lovekesh dhanda, kumarmehlan, dhandalovekesh resume and projects with contact">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
@@ -16,7 +18,7 @@
 			</div>
 			<div id="list">
 				<ul>
-					<li><a href="#about"> about </a></li>
+					<li><a  href="#about"> about </a></li>
 					<li><a href="#skills"> skills </a></li>
 					<li><a href="#experience"> experience </a></li>
 					<li><a href="education"> education </a></li>
@@ -28,27 +30,23 @@
  -->
 		<nav id="navigation">
 			<ul class="header-lists text-center">
-				<li><a href="#about"> about </a></li>
-				<li><a href="#skills"> skills </a></li>
-				<li><a href="#experience"> experience </a></li>
-				<li><a href="education"> education </a></li>
-				<li><a href="#portfolio"> portfolio </a></li>
-				<li><a href="#contact"> contact </a></li>
+			<% for(let i=0;i< headerLists.length; i++) { %>
+				<li><a aria-label="<%= headerLists[i] %>-link" href="#<%= headerLists[i] %>"> <%= headerLists[i] %></a></li>
+			<% } %>
 			</ul>
 		</nav>
 
 		<div id="name" class="text-center">
-			<p>Lovekesh</p>
+			<p><%= userName %></p>
 		</div>
 
 		<social id="social" class="header-lists text-center">
 			<ul>
-				<li><a href="https://www.linkedin.com/in/lovekesh9896/" target="_blank"><img src="/images/linke.png" id="linke"></a></li>
-				<li><a href="https://www.instagram.com/lovekesh9896/" target="_blank"><img src="/images/insta.png" id="insta"></a></li>
-				<li><a href="https://www.facebook.com/lovekesh9896" target="_blank"><img src="/images/facebook.png" id="facebook"></a></li>
-				<li><a href="https://twitter.com/LovekeshDhanda" target="_blank"><img src="/images/twitter.png" id="twitter"></a></li>
-				<li><a href="https://wa.me/919588169756" target="_blank"><img src="/images/whatsapp.png" id="whatsapp"></a></li>
-
+				<li><a aria-label="linkedin" href="https://www.linkedin.com/in/lovekesh9896/" rel="noreferrer" target="_blank"><img alt="linkedin-icon" src="/images/linke.webp" id="linke"></a></li>
+				<li><a aria-label="instagram" href="https://www.instagram.com/lovekesh9896/" rel="noreferrer" target="_blank"><img alt="instagram-icon" src="/images/insta.webp" id="insta"></a></li>
+				<li><a aria-label="facebook" href="https://www.facebook.com/lovekesh9896" rel="noreferrer" target="_blank"><img alt="facebook-icon" src="/images/facebook.webp" id="facebook"></a></li>
+				<li><a aria-label="twitter" href="https://twitter.com/LovekeshDhanda" rel="noreferrer" target="_blank"><img alt="twitter-icon" src="/images/twitter.webp" id="twitter"></a></li>
+				<li><a aria-label="whatsapp" href="https://wa.me/919588169756" rel="noreferrer" target="_blank"><img alt="facebook-icon" src="/images/whatsapp.webp" id="whatsapp"></a></li>
 			</ul>
 		</social>
 	</header>
@@ -56,7 +54,7 @@
 	<main id="main-content">
 		<section id="about">
 			<div id="my-image">
-				<img src="/images/q.jpg">
+				<img alt="my-image" src="/images/q.webp">
 			</div>
 			<p>Experience in<span style="color: blue;"> Coding </span>, 
 				<span style="color: blue;">Software design</span>, and
@@ -88,7 +86,7 @@
 
 
 				<div class="skill-progress">
-					<div class="percent75 C-orange">
+					<div class="percent80 C-orange">
 						<div class="skill-name">
 							<span> React </span>
 						</div>
@@ -102,28 +100,28 @@
 					</div>
 				</div>
 				<div class="skill-progress">
-					<div class="percent60 C-orange">
+					<div class="percent90 C-yellowGreen">
 						<div class="skill-name">
 							<span> CSS </span>
 						</div>
 					</div>
 				</div>	
 				<div class="skill-progress">
-					<div class="percent75 C-blue">
+					<div class="percent90 C-cadetBlue">
 						<div class="skill-name">
 							<span> HTML </span>
 						</div>
 					</div>
 				</div>
 				<div class="skill-progress">
-					<div class="percent80 C-teal">
+					<div class="percent75 C-teal">
 						<div class="skill-name">
 							<span> Node js </span>
 						</div>
 					</div>
 				</div>
 				<div class="skill-progress">
-					<div class="percent60 C-purple">
+					<div class="percent70 C-purple">
 						<div class="skill-name">
 							<span> Java </span>
 						</div>
@@ -133,13 +131,13 @@
 			</div>
 		</section>
 
-		<section id="experience">
+		<section id="education">
 			<h1 class="heading-section">
 				<div class="heading-icon">
 					<span><i class="fas fa-th-list"></i></span>
 				</div>
 				<div class="section-headings">
-					<span>EXPERIENCE & EDUCATION</span>
+					<span>EDUCATION</span>
 				</div>
 			</h1>
 
@@ -151,7 +149,7 @@
 					<div class="upper">
 
 						<div class="left-icon">
-							<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+							<img alt="institution-image" src="/images/coding-ninjas.webp">
 						</div>
 
 						<div class="names">
@@ -169,47 +167,46 @@
 				<div class="work-elem">
 					<div class="upper">
 
-						<div class="left-icon">
-							<img src="/images/icon.png">
+						<div class="left-icon" style="width: 25%;">
+							<img alt="institution-image" src="/images/mait.webp">
 						</div>
 
 						<div class="names">
-							<h3 > Dry Runner</h3>
-							<h4> Project</h4>
-							<h5> Currently working </h5>
+							<h3 > Student</h3>
+							<h4> MAIT, Delhi</h4>
+							<h5> August 2018 - June 2020 </h5>
 						</div>
 
 					</div>
 
 					<div class="lower">
-						<p>This project contains heavy use of both Javascript and Java. My two main languages. The project can create a GUI of any Java code. For example, creating a recursion tree from plain java code so that the user can visualize it easily and able to correct or understand his/her code.</p>
+						<p>Maharaja Agersen Institute of technology is a collage under IP university, situated in the outskirts of Delhi. Although my interest is in software science my main area of study is in Electronics and Communication. I want to pursue ECE when I took admission but my interest grew in Coding and I decided to change my career path.</p>
+					</div>
+				</div>
+				<div class="work-elem">
+					<div class="upper">
+
+						<div class="left-icon" style="width: 20%;">
+							<img alt="institution-image" src="/images/school.webp">
+						</div>
+
+						<div class="names">
+							<h3 > Student</h3>
+							<h4> Jai Hind Public School</h4>
+							<h5> July 2015 - June 2017</h5>
+						</div>
+
+					</div>
+
+					<div class="lower">
+						<p>I completed my Sr. Secondary education from here. It's in the outer skirts of Delhi so there is a lot of areas for various activities like sports and cultural activities. </p>
 					</div>
 				</div>
 				<div class="work-elem">
 					<div class="upper">
 
 						<div class="left-icon">
-							<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
-						</div>
-
-						<div class="names">
-							<h3 > Designation</h3>
-							<h4> Company Name</h4>
-							<h5> Month YYYY - Month YYYY</h5>
-						</div>
-
-					</div>
-
-					<div class="lower">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-						</p>
-					</div>
-				</div>
-				<div class="work-elem">
-					<div class="upper">
-
-						<div class="left-icon">
-							<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+							<img alt="institution-image" src="/images/coding-ninjas.webp">
 						</div>
 
 						<div class="names">
@@ -228,21 +225,22 @@
 
 				<div id="timeline">
 					<div class="icon">
-						<img src="/images/airplane.png">
+						<img alt="" src="/images/airplane.webp">
 					</div>
 				</div>
 				
 			</div>
 			
 		</section>
+		<!-- <p>This project contains heavy use of both Javascript and Java. My two main languages. The project can create a GUI of any Java code. For example, creating a recursion tree from plain java code so that the user can visualize it easily and able to correct or understand his/her code.</p> -->
 
-		<section id="education">
+		<section id="courses">
 			<h1 class="heading-section">
 				<div class="heading-icon">
 					<span><i class="fas fa-th-list"></i></span>
 				</div>
 				<div class="section-headings">
-					<span>EDUCATION</span>
+					<span>COURSES</span>
 				</div>
 
 			</h1>
@@ -253,58 +251,58 @@
 					<div class="upper">
 
 						<div class="left-icon">
-							<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png">
+							<img alt="institution-image" src="/images/coding-ninjas.webp">
 						</div>
 
 						<div class="names">
-							<h3 > B. Tech</h3>
-							<h4> MAIT, Delhi</h4>
-							<h5> Aug 2020 - Jun 2022</h5>
+							<h3 > DS & ALGO in JAVA</h3>
+							<h4> Coding Ninjas</h4>
+							<h5> Oct 2019 - Feb 2020</h5>
 						</div>
 
 					</div>
 
 					<div class="lower">
-						<p></p>
+						<p>I took the demo of this course but I never knew that this will kick off my coding career. After that, I took several courses on their website and keep going. Now I hold Top Performer certificates in all the courses I studied including this one. The course included all the basic data structures like tree, graph, stack, queue, and many more.</p>
 					</div>
 				</div>
 				<div class="work-elem">
 					<div class="upper">
 
 						<div class="left-icon">
-							<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png">
+							<img alt="institution-image" src="/images/coding-ninjas.webp">
 						</div>
 
 						<div class="names">
-							<h3 > Degree</h3>
-							<h4> Institute Name</h4>
-							<h5> Month YYYY - Month YYYY</h5>
+							<h3 > Web development</h3>
+							<h4> Coding Ninjas</h4>
+							<h5> Mar 2020 - July 2020</h5>
 						</div>
 
 					</div>
 
 					<div class="lower">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-						</p>
+						<p>I learned full-stack web development from Coding Ninjas too. The course included HTML, CSS, and Javascript from beginner to advanced in front end part and Node js in the back-end part. I also worked on some projects like a Web music player, a To-do list, and a social media website.
+							During this course, I also learned other technologies like Git and API.</p>
 					</div>
 				</div>
 				<div class="work-elem">
 					<div class="upper">
 
 						<div class="left-icon">
-							<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png">
+							<img alt="institution-image" src="/images/udemy.webp" style="border-radius: 15px;">
 						</div>
 
 						<div class="names">
-							<h3 > Degree</h3>
-							<h4> Institute Name</h4>
-							<h5> Month YYYY - Month YYYY</h5>
+							<h3 > React</h3>
+							<h4> Udemy</h4>
+							<h5> July 2020 - currently Going</h5>
 						</div>
 
 					</div>
 
 					<div class="lower">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						<p>This course includes React from basics to advanced. It covers all the important topics like hooks, react router, and redux. I have completed around 40% of the course material. There are 2 projects which I will plan on working one is a burger builder and the other is windows concept. Windows concept uses a lot of API along with react to show users different types of data.</p>
 
 					</div>
 				</div>
@@ -314,7 +312,7 @@
 
 				<div id="timeline">
 					<div class="icon">
-						<img src="/images/car.png" style="transform: rotate(270deg);">
+						<img alt="" src="/images/car.webp" style="transform: rotate(270deg);">
 					</div>
 				</div>
 				
@@ -324,21 +322,21 @@
 
 		</section>
 
-		<section id="portfolio">
+		<section id="projects">
 			
 			<h1 class="heading-section">
 				<div class="heading-icon">
 					<span><i class="fas fa-th-list"></i></span>
 				</div>
 				<div class="section-headings">
-					<span>PORTFOLIO</span>
+					<span>PROJECTS</span>
 				</div>
 			</h1>
 
 			<div class="portfolio-container">
 
 				<div class="portfolio-image-container">
-					<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+					<img alt="project-image" src="/images/project2.webp">
 					<div class="portfolio-details">
 						<p>
 							Write here basic details about the project.
@@ -347,7 +345,7 @@
 
 				</div>
 				<div class="portfolio-image-container">
-					<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+					<img alt="project-image" src="/images/project2.webp">
 					<div class="portfolio-details">
 						<p>
 							Write here basic details about the project.
@@ -356,7 +354,7 @@
 
 				</div>
 				<div class="portfolio-image-container">
-					<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+					<img alt="project-image" src="/images/project2.webp">
 					<div class="portfolio-details">
 						<p>
 							Write here basic details about the project.
@@ -364,83 +362,71 @@
 					</div>
 				</div>
 
-				<div class="portfolio-image-container">
-					<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
-					<div class="portfolio-details">
-						<p>
-							Write here basic details about the project.
-						</p>
-					</div>
-
-				</div>
-				<div class="portfolio-image-container">
-					<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
-					<div class="portfolio-details">
-						<p>
-							Write here basic details about the project.
-						</p>
-					</div>
-
-				</div>
-				<div class="portfolio-image-container">
-					<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
-					<div class="portfolio-details">
-						<p>
-							Write here basic details about the project.
-						</p>
-					</div>
-
-				</div>
 
 			</div>
 
 		</section>
 		
 		<section id="contact">
-			<h1 class="heading-section">
-				<div class="heading-icon">
-					<span><i class="fas fa-th-list"></i></span>
-				</div>
-				<div class="section-headings">
-					<span>CONTACT</span>
-				</div>
-			</h1>
-			<div id="form-and-contact">
-				<div id="form-section">
-					<form>
-						<input type="text" name="NAME"  placeholder="Your Name"><br>
-						<input type="text" name="email"  placeholder="Your E-Mail"><br>
-						<input type="text" name="massage" id="massage" placeholder="Massage" ><br>
-						<button type="submit" class="submit-button">SEND MASSAGE</button>
-					</form>
+            <h1 class="section-heading mb50px">
+                <span>
+                    <i class="far fa-address-card"></i>
+                </span>
+                <span> Contact </span>
+            </h1>
+            <div id="contact-container">
 
-				</div>
+                <div id="contact-form-container">
+					<form id="contact-form" method="POST" action="/send-message">
+						<label>
+							Name
+							<input id="input-name" name="name" type="text" placeholder="Enter Name">
+						</label>
+						<label>
+							Email
+							<input id="input-email" name="email" type="text" required placeholder="Enter Email">
+						</label>
+						<label>
+							Message
+							<textarea id="input-message" name="message" rows="2" cols=40 placeholder="Enter Message"></textarea>
+						</label>
+                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+                <div id="my-details-container">
 
-				<div id="address">
-					<span class="h6">Get In Touch</span><br>
-					<div class="px100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standarddummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-					<span class="h6">My Address</span><br>
-					<span class="size10px"><i class="fas fa-map-marker-alt"></i> Delhi, India</span><br>
-					<span class="size10px"><i class="fas fa-map-marker-alt"></i> 999999999</span><br>
-					<span class="size10px"><i class="fas fa-map-marker-alt"></i>
-					myemail@gmail.com</span><br>
-				</div>
-			</div>
+                    <h3> Get In touch </h3>
+					<p>I am a technology enthusiast who likes to code. This website contains some information about my projects and upcoming ideas. Apart from coding my other interest include hacking, driving, and playing football.
+						I am always looking to collaborate with other people. So if you have any interest in working with me drop a message me or connect with me on different platforms.</p>
+                    <h3> My Address </h3>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Delhi, India</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>9588169756</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="far fa-envelope"></i>
+                        <span>dhandalovekesh@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
 			<social id="social" class="header-lists text-center">
-				<ul>
-					<li><a href="https://www.Linkeden.com" target="_blank"><img src="/images/linke.png" id="linke"></a></li>
-					<li><a href="https://www.instagram.com" target="_blank"><img src="/images/insta.png" id="insta"></a></li>
-					<li><a href="https://www.facebook.com" target="_blank"><img src="/images/facebook.png" id="facebook"></a></li>
-					<li><a href="https://www.twitter.com" target="_blank"><img src="/images/twitter.png" id="twitter"></a></li>
-					<li><a href="https://www.whatsapp.com" target="_blank"><img src="/images/whatsapp.png" id="whatsapp"></a></li>
-
+				<ul >
+					<li><a aria-label="linkedin" href="https://www.linkedin.com/in/lovekesh9896/" rel="noreferrer" target="_blank"><img alt="linkedin-icon" src="/images/linke.webp" id="linke"></a></li>
+					<li><a aria-label="instagram" href="https://www.instagram.com/lovekesh9896/" rel="noreferrer" target="_blank"><img alt="instagram-icon" src="/images/insta.webp" id="insta"></a></li>
+					<li><a aria-label="facebook" href="https://www.facebook.com/lovekesh9896" rel="noreferrer" target="_blank"><img alt="facebook-icon" src="/images/facebook.webp" id="facebook"></a></li>
+					<li><a aria-label="twitter" href="https://twitter.com/LovekeshDhanda" rel="noreferrer" target="_blank"><img alt="twitter-icon" src="/images/twitter.webp" id="twitter"></a></li>
+					<li><a aria-label="whatsapp" href="https://wa.me/919588169756" rel="noreferrer" target="_blank"><img alt="whatsapp-icon" src="/images/whatsapp.webp" id="whatsapp"></a></li>
 				</ul>
-			</social>
+			</social>	
 		</section>
+
 		
 	</main>
-
-	<script type="text/javascript" src="/js/new_resume.js"></script>
 
 </body>
 </html>
