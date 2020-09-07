@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended : false}));
 
 app.use('/', require('./routes')); // telling app to use routes
 
-app.use(express.static(__dirname + "/assets"));
+app.use(express.static(__dirname + '/assets'));
 
 
 app.listen(port, function(err){

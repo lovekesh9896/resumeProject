@@ -9,12 +9,11 @@ const cred = {
         port : 587,
         secure : false,
         auth : {
-            user : "kumarmehlan@gmail.com",
-            pass : "loki@nanu",
+            user : process.env.RESUME_GOOGLE_ID,
+            pass : process.env.RESUME_GOOGLE_PASSWORD,
         }
     } 
 }
-
 let transporter = nodeMailer.createTransport(cred.smtp);
 let renderTemplate = (data, relativePath) => {
     let mailHtml;
