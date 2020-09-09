@@ -16,14 +16,17 @@
 		
 		<nav id="navigation">
 			<ul class="header-lists text-center">
-			<% for(let i=0;i< headerLists.length; i++) { %>
-				<li><a aria-label="<%= headerLists[i] %>-link" href="#<%= headerLists[i] %>"> <%= headerLists[i] %></a></li>
-			<% } %>
+				<li><a aria-label="about-link" href="#about">about</a></li>
+				<li><a aria-label="skills-link" href="#skills">skills</a></li>
+				<li><a aria-label="education-link" href="#education">education</a></li>
+				<li><a aria-label="courses-link" href="#courses">courses</a></li>
+				<li><a aria-label="projects-link" href="#projects">projects</a></li>
+				<li><a aria-label="contact-link" href="#contact">contact</a></li>
 			</ul>
 		</nav>
 
 		<div id="name" class="text-center">
-			<p><%= userName %></p>
+			<p>Lovekesh</p>
 		</div>
 
 		<social id="social" class="header-lists text-center">
@@ -69,47 +72,34 @@
 
 				<div class="skill-progress">
 					<div class="percent80 C-orange">
-						<div class="skill-name">
-							<span> React </span>
-						</div>
+						<span> React </span>
 					</div>
 				</div>
 				<div class="skill-progress">
 					<div class="percent80 C-blue">
-						<div class="skill-name">
-							<span> Javascript </span>
-						</div>
+						<span> Javascript </span>
 					</div>
 				</div>
 				<div class="skill-progress">
 					<div class="percent90 C-yellowGreen">
-						<div class="skill-name">
-							<span> CSS </span>
-						</div>
+						<span> CSS </span>
 					</div>
 				</div>	
 				<div class="skill-progress">
 					<div class="percent90 C-cadetBlue">
-						<div class="skill-name">
-							<span> HTML </span>
-						</div>
+						<span> HTML </span>
 					</div>
 				</div>
 				<div class="skill-progress">
 					<div class="percent75 C-teal">
-						<div class="skill-name">
-							<span> Node js </span>
-						</div>
+						<span> Node js </span>
 					</div>
 				</div>
 				<div class="skill-progress">
 					<div class="percent70 C-purple">
-						<div class="skill-name">
-							<span> Java </span>
-						</div>
+						<span> Java </span>
 					</div>
 				</div>		
-				
 			</div>
 		</section>
 
@@ -131,15 +121,20 @@
 						</div>
 
 						<div class="names">
-							<h3 > Teaching Assistant</h3>
-							<h4> Coding Ninjas</h4>
-							<h5> March 2020 - July 2020</h5>
+							<span class="names-span-1">Teaching Assistant</span> 
+							<span class="names-span-2">Coding Ninjas</span> 
+							<span class="names-span-3"> Mar 2020 - Jul 2020</span> 
 						</div>
 
 					</div>
 
 					<div class="lower">
-						<p>During this time my main responsibilities include taking doubt sessions regularly on data structures and algorithms in java, debugging codes, and helping students in their assignments & various projects. Other responsibilities are coming up with multiple approaches of questions for students so that they understand each question properly.</p>
+						<p>During this time my main responsibilities include taking doubt
+						sessions regularly on data structures and algorithms in java,
+						debugging codes, and helping students in their assignments & 
+						various projects. Other responsibilities are coming up with multiple 
+						approaches of questions for students so that they understand each 
+						question properly.</p>
 					</div>
 				</div>
 				<div class="work-elem">
@@ -150,15 +145,19 @@
 						</div>
 
 						<div class="names">
-							<h3 > Student</h3>
-							<h4> MAIT, Delhi</h4>
-							<h5> August 2018 - June 2020 </h5>
+							<span class="names-span-1"> Student</span>
+							<span class="names-span-2"> MAIT, Delhi</span>
+							<span class="names-span-3"> Aug 2018 - Jun 2020 </span>
 						</div>
 
 					</div>
 
 					<div class="lower">
-						<p>Maharaja Agersen Institute of technology is a collage under IP university, situated in the outskirts of Delhi. Although my interest is in software science my main area of study is in Electronics and Communication. I want to pursue ECE when I took admission but my interest grew in Coding and I decided to change my career path.</p>
+						<p>Maharaja Agersen Institute of technology is a collage under IP 
+						university, situated in the outskirts of Delhi. Although my interest 
+						is in software science my main area of study is in Electronics and 
+						Communication. I want to pursue ECE when I took admission but my 
+						interest grew in Coding and I decided to change my career path.</p>
 					</div>
 				</div>
 				<div class="work-elem">
@@ -169,15 +168,17 @@
 						</div>
 
 						<div class="names">
-							<h3 > Student</h3>
-							<h4> Jai Hind Public School</h4>
-							<h5> July 2015 - June 2017</h5>
+							<span class="names-span-1"> Student</span>
+							<span class="names-span-2"> Jai Hind Public School</span>
+							<span class="names-span-3"> Jul 2015 - Jun 2017</span>
 						</div>
 
 					</div>
 
 					<div class="lower">
-						<p>I completed my Sr. Secondary education from here. It's in the outer skirts of Delhi so there is a lot of areas for various activities like sports and cultural activities. </p>
+						<p>I completed my Sr. Secondary education from here. It's in 
+						the outer skirts of Delhi so there is a lot of areas for various 
+						activities like sports and cultural activities. </p>
 					</div>
 				</div>
 				<div class="work-elem">
@@ -188,9 +189,9 @@
 						</div>
 
 						<div class="names">
-							<h3 > Designation</h3>
-							<h4> Company Name</h4>
-							<h5> Month YYYY - Month YYYY</h5>
+							<span class="names-span-1"> Designation</span>
+							<span class="names-span-2">Company Name</span>
+							<span class="names-span-3"> Month YYYY - Month YYYY</span>
 						</div>
 
 					</div>
@@ -227,15 +228,20 @@
 						</div>
 
 						<div class="names">
-							<h3 > DS & ALGO in JAVA</h3>
-							<h4> Coding Ninjas</h4>
-							<h5> Oct 2019 - Feb 2020</h5>
+							<span class="names-span-1"> DS & ALGO in JAVA</span>
+							<span class="names-span-2"> Coding Ninjas</span>
+							<span class="names-span-3"> Oct 2019 - Feb 2020</span>
 						</div>
 
 					</div>
 
 					<div class="lower">
-						<p>I took the demo of this course but I never knew that this will kick off my coding career. After that, I took several courses on their website and keep going. Now I hold Top Performer certificates in all the courses I studied including this one. The course included all the basic data structures like tree, graph, stack, queue, and many more.</p>
+						<p>I took the demo of this course but I never knew that 
+						this will kick off my coding career. After that, I took several 
+						courses on their website and keep going. Now I hold Top Performer 
+						certificates in all the courses I studied including this one. 
+						The course included all the basic data structures like tree, graph, 
+						stack, queue, and many more.</p>
 					</div>
 				</div>
 				<div class="work-elem">
@@ -246,15 +252,19 @@
 						</div>
 
 						<div class="names">
-							<h3 > Web development</h3>
-							<h4> Coding Ninjas</h4>
-							<h5> Mar 2020 - July 2020</h5>
+							<span class="names-span-1"> Web development</span>
+							<span class="names-span-2"> Coding Ninjas</span>
+							<span class="names-span-3">Mar 2020 - July 2020</span>
 						</div>
 
 					</div>
 
 					<div class="lower">
-						<p>I learned full-stack web development from Coding Ninjas too. The course included HTML, CSS, and Javascript from beginner to advanced in front end part and Node js in the back-end part. I also worked on some projects like a Web music player, a To-do list, and a social media website.
+						<p>I learned full-stack web development from Coding Ninjas 
+							too. The course included HTML, CSS, and Javascript from 
+							beginner to advanced in front end part and Node js in the 
+							back-end part. I also worked on some projects like a Web music 
+							player, a To-do list, and a social media website.
 							During this course, I also learned other technologies like Git and API.</p>
 					</div>
 				</div>
@@ -266,21 +276,23 @@
 						</div>
 
 						<div class="names">
-							<h3 > React</h3>
-							<h4> Udemy</h4>
-							<h5> July 2020 - currently Going</h5>
+							<span class="names-span-1"> React</span>
+							<span class="names-span-2"> Udemy</span>
+							<span class="names-span-3">Jul 2020 - currently Going</span>
 						</div>
 
 					</div>
 
 					<div class="lower">
-						<p>This course includes React from basics to advanced. It covers all the important topics like hooks, react router, and redux. I have completed around 40% of the course material. There are 2 projects which I will plan on working one is a burger builder and the other is windows concept. Windows concept uses a lot of API along with react to show users different types of data.</p>
+						<p>This course includes React from basics to advanced. It covers 
+						all the important topics like hooks, react router, and redux. 
+						I have completed around 40% of the course material. There are 2 
+						projects which I will plan on working one is a burger builder and
+						the other is windows concept. Windows concept uses a lot of API along 
+						with react to show users different types of data.</p>
 
 					</div>
 				</div>
-
-
-				
 
 				<div id="timeline">
 					<div class="icon">
@@ -289,9 +301,6 @@
 				</div>
 				
 			</div>
-
-
-
 		</section>
 
 		<section id="projects">
@@ -360,22 +369,15 @@
                 </div>
                 <div id="my-details-container">
 
-                    <h3> Get In touch </h3>
+                    <span>Get in touch</span>
 					<p>I am a technology enthusiast who likes to code. This website contains some information about my projects and upcoming ideas. Apart from coding my other interest include hacking, driving, and playing football.
 						I am always looking to collaborate with other people. So if you have any interest in working with me drop a message me or connect with me on different platforms.</p>
-                    <h3> My Address </h3>
-                    <div class="my-details-info-container">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Delhi, India</span>
-                    </div>
-                    <div class="my-details-info-container">
-                        <i class="fas fa-mobile-alt"></i>
-                        <span>9588169756</span>
-                    </div>
-                    <div class="my-details-info-container">
-                        <i class="far fa-envelope"></i>
-                        <span>dhandalovekesh@gmail.com</span>
-                    </div>
+                    <span> My Address </span>
+                    <ul style="padding-left: 15px;">
+						<li class="my-details-info-container">Delhi, India</li>
+						<li class="my-details-info-container">9588169756</li>
+						<li class="my-details-info-container">dhandalovekesh@gmail.com</li>
+					</ul>
                 </div>
             </div>
 

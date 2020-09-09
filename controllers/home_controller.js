@@ -1,12 +1,8 @@
 const sendMail = require('./mailer/message_mailer');
+
 module.exports.home = function(req, res){
-    var headerLists = ["about","skills","education","courses","projects","contact"];
-    return res.render("home", {
-        title : "hi babay",
-        userName : "Lovekesh",
-        headerLists : headerLists,
-    });
-    
+    console.log(__dirname);
+    return res.sendFile('/views/home.html', {root : './'});
 }
 
 module.exports.sendMessage = function(req,res){
