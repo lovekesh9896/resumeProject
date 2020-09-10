@@ -1,7 +1,6 @@
 const sendMail = require('./mailer/message_mailer');
 
 module.exports.home = function(req, res){
-    console.log(__dirname);
     return res.sendFile('/views/home.html', {root : './'});
 }
 
