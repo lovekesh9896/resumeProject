@@ -9,8 +9,8 @@ body{
 	height: 100%;
 	padding: 0;
 	overflow-x: hidden; 
-	--stripe: #cfd8dc;
-  	--bg: #e1e1e1;
+	--stripe: #4ca4ea;
+  	--bg: #d6b0b0;
 }
 #header{
 	background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
@@ -22,10 +22,10 @@ body{
 	
 	width: 100vw;
 	height: 70vh;
-	background-position: center;
+	/* background-position: center; */
 	opacity: 0.8;
-	background-attachment: fixed;
-	background-size: cover;
+	/* background-attachment: fixed;
+	background-size: cover; */
 }
 .header-lists{
 	margin-top: 0px;

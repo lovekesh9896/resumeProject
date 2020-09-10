@@ -393,8 +393,17 @@
 		</section>
 	</main>
 	<script>
+		var a = function(){
+			setTimeout(function(){
+				document.getElementById('header').style.backgroundImage = "url('../images/background-image.webp')";
+				document.getElementById('header').style['background-attachment'] = "fixed";
+				document.getElementById('header').style['background-size'] = "cover";
+				
+			},3000);
+		}
+		
 		window.onload = function(){
-			document.getElementById('header').style.backgroundImage = "url('../images/background-image.webp')";
+			a();
 		}
 	</script>
 </body>
