@@ -8,7 +8,7 @@ app.use("/", require("./routes")); // telling app to use routes
 
 app.use(express.static(__dirname + "/assets"));
 
-// test commit
+// commit again done
 app.listen(port, function (err) {
 	if (err) {
 		console.log("Error in starting the server", err);
